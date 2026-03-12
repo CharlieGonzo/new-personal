@@ -172,3 +172,26 @@
     color:var(--darker-purple);
 }
 
+.about-section{
+    padding:80px;
+    background:#F6F2FF;
+}
+
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.about-image img{
+    width:250px;
+    border-radius:10px;
+}
+
+.about-text{
+    max-width:600px;
+}
+
