@@ -1,86 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="second-style.css">
-    <script src="https://kit.fontawesome.com/8ac49c45b2.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Charles Gonzalez</title>
+  <title>Charles Gonzalez</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="second-style.css">
+
+  <script src="https://kit.fontawesome.com/8ac49c45b2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <section class="intro">
-        <nav class="intro-nav">
-            <div class="intro-button-container">
-              <a href="https://www.facebook.com" target="_blank" title="Facebook">
-               <i class="fa-brands fa-github fa-2x intro-icon"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank" title="Twitter">
-                <i class="fab fa-linkedin fa-2x intro-icon"></i>
-            </a>
-            </div>
-            <div>
-                <a href="">
-                <button class="intro-button"><i class="fa-solid fa-download"></i> Resume</button>
-                </a>
-            </div>
-        </nav>
-        <div class="intro-container">
-            <div class="intro-container-box">
-                <h1 class="intro-big-text">Software Developer<h1>
-                    <h3>"Make it work, make it right, make it fast." — Kent Beck</h3>
-            </div>
-            <div class="intro-container-box">
-               <img src="/img/main-pic.png" class="intro-img" alt="">
-               <h1 class="">Charles Gonzalez Jr<h1></h1>
-            </div>
-        </div>
-       
-    </section>
-     <h1 style="font-size: 4rem; text-align: center; background-color: #932F6D; color: #DCCCFF; padding-top: 30px;">Projects</h1>
-    <div class="projects-section">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/img/sp.png" alt="Project 1">
-        </div>
-        <div class="project-details">
-          <div class="project-title">Protein Profiling Software</div>
-          <div class="project-description">A program that uses Machine learning to train a model on Spatial Proteomics. The approach used in this project is U-NET</div>
-        </div>
-          <a href="https://github.com/CharlieGonzo/Protein_Profiling_UNET_Example" target="_blank" title="Facebook">
-               <i class="fa-brands fa-github fa-2x intro-icon"></i>
-            </a>
+
+<!-- INTRO SECTION -->
+
+<section class="intro">
+
+  <nav class="intro-nav">
+
+    <div class="intro-button-container">
+
+      <a href="https://github.com/CharlieGonzo" target="_blank" title="GitHub">
+        <i class="fa-brands fa-github fa-2x intro-icon"></i>
+      </a>
+
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin fa-2x intro-icon"></i>
+      </a>
+
+    </div>
+
+    <div>
+      <a href="resume.pdf" target="_blank">
+        <button class="intro-button">
+          <i class="fa-solid fa-download"></i> Resume
+        </button>
+      </a>
+    </div>
+
+  </nav>
+
+  <div class="intro-container">
+
+    <div class="intro-container-box">
+      <h1 class="intro-big-text">Software Developer</h1>
+      <h3>"Make it work, make it right, make it fast." — Kent Beck</h3>
+    </div>
+
+    <div class="intro-container-box">
+      <img src="img/main-pic.png" class="intro-img" alt="Charles Gonzalez">
+      <h1>Charles Gonzalez Jr</h1>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<h1 style="font-size:4rem; text-align:center; background-color:#932F6D; color:#DCCCFF; padding-top:30px;">
+  About Me
+</h1>
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-image">
+      <img src="img/main-pic.png" alt="About Charles">
+    </div>
+
+    <div class="about-text">
+
+      <h2>Hello!</h2>
+
+      <p>
+        I'm Charles Gonzalez Jr, a computer science student focused on backend
+        development and distributed systems. I enjoy designing scalable systems,
+        building real-time applications, and working with technologies like
+        Java, Go, Kafka, and Docker.
+      </p>
+
+      <p>
+        Many of my projects focus on system design, real-time communication,
+        and cloud-based architecture. I enjoy exploring how systems behave at
+        scale and learning how modern infrastructure powers large applications.
+      </p>
+
+      <p>
+        When I'm not coding, I'm usually experimenting with new technologies,
+        building side projects, or learning more about system architecture and
+        backend engineering.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<h1 style="font-size:4rem; text-align:center; background-color:#932F6D; color:#DCCCFF; padding-top:30px;">
+  Projects
+</h1>
+
+<div class="projects-section">
+
+
+  <div class="project-card">
+
+    <div class="project-image">
+      <img src="img/sp.png" alt="Protein Profiling Software">
+    </div>
+
+    <div class="project-details">
+      <div class="project-title">
+        Protein Profiling Software
       </div>
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/img/chess.png" alt="Project 2">
-        </div>
-        <div class="project-details">
-          <div class="project-title">Online Chess Game</div>
-          <div class="project-description">Chess game with online functionality!. Uses JavaFX for frontend and spring web sockets for the backend</div>
-        </div>
-          <a href="https://github.com/CharlieGonzo/Multiplayer-Chess-Game" target="_blank" title="Facebook">
-               <i class="fa-brands fa-github fa-2x intro-icon"></i>
-            </a>
+      <div class="project-description">
+        A program that uses machine learning to train a model on spatial
+        proteomics data using the U-NET architecture.
+      </div>
+    </div>
+
+    <a href="https://github.com/CharlieGonzo/Protein_Profiling_UNET_Example" target="_blank">
+      <i class="fa-brands fa-github fa-2x intro-icon"></i>
+    </a>
+
+  </div>
+
+
+  <div class="project-card">
+
+    <div class="project-image">
+      <img src="img/chess.png" alt="Online Chess Game">
+    </div>
+
+    <div class="project-details">
+
+      <div class="project-title">
+        Online Chess Game
       </div>
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/img/stock.png" alt="Project 3">
-        </div>
-        <div class="project-details">
-          <div class="project-title">Stock Watch</div>
-          <div class="project-description">Lets the user simulate trading stocks with real-time info. This project uses React, Spring Boot, MongoDBAtlas, and JWT Authentication</div>
-        </div>
-          <a href="https://github.com/CharlieGonzo/Stock-cloud-app" target="_blank" title="Facebook">
-               <i class="fa-brands fa-github fa-2x intro-icon"></i>
-            </a>
+      <div class="project-description">
+        Multiplayer chess game built with JavaFX for the frontend and Spring
+        WebSockets for real-time online gameplay.
       </div>
+
+    </div>
+
+    <a href="https://github.com/CharlieGonzo/Multiplayer-Chess-Game" target="_blank">
+      <i class="fa-brands fa-github fa-2x intro-icon"></i>
+    </a>
+
+  </div>
+
+
+  <div class="project-card">
+
+    <div class="project-image">
+      <img src="img/stock.png" alt="Stock Watch">
+    </div>
+
+    <div class="project-details">
+
+      <div class="project-title">
+        Stock Watch
       </div>
-    
-    <h1 class="skills-header">Skills</h1>
+
+      <div class="project-description">
+        A stock trading simulation platform using React, Spring Boot,
+        MongoDB Atlas, and JWT authentication.
+      </div>
+
+    </div>
+
+    <a href="https://github.com/CharlieGonzo/Stock-cloud-app" target="_blank">
+      <i class="fa-brands fa-github fa-2x intro-icon"></i>
+    </a>
+
+  </div>
+
+</div>
+
+
+<!-- SKILLS -->
+
+<h1 class="skills-header">Skills</h1>
 
 <section class="skills-section">
 
@@ -125,5 +237,6 @@
   </div>
 
 </section>
+
 </body>
 </html>
