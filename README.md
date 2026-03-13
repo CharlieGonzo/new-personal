@@ -50,7 +50,7 @@ The website includes the following pages/sections:
   - Images for projects and personal profile.
 
 ### Wireframes
-><img src="img/6950.jpeg"/>
+><img src="img/IMG_6950.jpeg"/>
 
 ---
 
