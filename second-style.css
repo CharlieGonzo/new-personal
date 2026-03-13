@@ -113,19 +113,7 @@
   }
 }
 /*skil section*/
-.skills-section {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  justify-content: center; /* Center the grid horizontally */
-  align-items: center; /* Center the grid vertically */
-}
+
 
 .skill-icon {
   font-size: 48px;
@@ -208,25 +196,32 @@
 }
 
 .projects-section {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  /* removed fixed height so grid can flow */
   padding: 20px;
-   color: var(--dark-purple);
+  padding-bottom: 50px;
+  color: var(--dark-purple);
   background-color: var(--dark-purple);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+/* make the Projects heading span the full row so cards fill the columns */
+.projects-section > h1 {
+  grid-column: 1 / -1;
 }
 /*project section*/
 .project-card {
   display: flex;
   flex-direction: column;
+  padding: 30px;
   margin-bottom: 20px;
   background-color: var(--dark-grey);
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,transform 0.3s ease;
 }
 
 .project-image {

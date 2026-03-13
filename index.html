@@ -16,24 +16,21 @@
 
 <!-- INTRO SECTION -->
 
-<section class="intro">
+<section id="intro" class="intro">
 
   <nav class="intro-nav">
 
     <div class="intro-button-container">
 
-      <a href="https://github.com/CharlieGonzo" target="_blank" title="GitHub">
-        <i class="fa-brands fa-github fa-2x intro-icon"></i>
-      </a>
-
-      <a href="https://linkedin.com" target="_blank" title="LinkedIn">
-        <i class="fa-brands fa-linkedin fa-2x intro-icon"></i>
-      </a>
+      <a href="#projects" title="Projects">Projects</a>
+      <a href="#skills" title="Skills">Skills</a>
+      <a href="#about" title="About">About</a>
+      <a href="#contact" title="Contact">Contact</a>
 
     </div>
 
     <div>
-      <a href="resume.pdf" target="_blank">
+      <a href="Charles G. Resume.pdf" target="_blank">
         <button class="intro-button">
           <i class="fa-solid fa-download"></i> Resume
         </button>
@@ -61,39 +58,31 @@
 
 <!-- ABOUT SECTION -->
 
-<h1 style="font-size:4rem; text-align:center; background-color:#932F6D; color:#DCCCFF; padding-top:30px;">
-  About Me
-</h1>
-
-<section class="about-section">
-
+<section id="about" class="about-section">
+  <h1 style="font-size:4rem; text-align:center; padding-top:30px; margin-bottom: 30px;">
+    About Me
+  </h1>
   <div class="about-container">
 
     <div class="about-image">
-      <img src="img/main-pic.png" alt="About Charles">
+      <img src="img/drum.jpg" alt="About Charles">
     </div>
 
     <div class="about-text">
 
-      <h2>Hello!</h2>
-
+      <h1>Hello!</h1>
+      <br>
       <p>
         I'm Charles Gonzalez Jr, a computer science student focused on backend
         development and distributed systems. I enjoy designing scalable systems,
         building real-time applications, and working with technologies like
         Java, Go, Kafka, and Docker.
-      </p>
-
+        </p>
+        <br>
       <p>
         Many of my projects focus on system design, real-time communication,
         and cloud-based architecture. I enjoy exploring how systems behave at
         scale and learning how modern infrastructure powers large applications.
-      </p>
-
-      <p>
-        When I'm not coding, I'm usually experimenting with new technologies,
-        building side projects, or learning more about system architecture and
-        backend engineering.
       </p>
 
     </div>
@@ -104,13 +93,10 @@
 
 
 <!-- PROJECTS -->
-
-<h1 style="font-size:4rem; text-align:center; background-color:#932F6D; color:#DCCCFF; padding-top:30px;">
+<div id="projects" class="projects-section">
+<h1 style="font-size:4rem; text-align:center; color:var(--dark-grey); padding-top:30px;">
   Projects
 </h1>
-
-<div class="projects-section">
-
 
   <div class="project-card">
 
@@ -191,52 +177,85 @@
 
 
 <!-- SKILLS -->
-
-<h1 class="skills-header">Skills</h1>
-
+<h1 id="skills" class="skills-header">Skills</h1>
 <section class="skills-section">
 
-  <div class="skill-card">
-    <i class="fa-brands fa-java skill-icon"></i>
-    <h3>Java</h3>
-  </div>
+  <section class="skills-section">
+    <div class="skill-card">
+      <i class="fa-brands fa-java skill-icon"></i>
+      <h3>Java</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-brands fa-golang skill-icon"></i>
-    <h3>Go</h3>
-  </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-golang skill-icon"></i>
+      <h3>Go</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-brands fa-react skill-icon"></i>
-    <h3>React</h3>
-  </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-react skill-icon"></i>
+      <h3>React</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-solid fa-database skill-icon"></i>
-    <h3>Databases</h3>
-  </div>
+    <div class="skill-card">
+      <i class="fa-solid fa-database skill-icon"></i>
+      <h3>Databases</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-brands fa-docker skill-icon"></i>
-    <h3>Docker</h3>
-  </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-docker skill-icon"></i>
+      <h3>Docker</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-solid fa-server skill-icon"></i>
-    <h3>Distributed Systems</h3>
-  </div>
+    <div class="skill-card">
+      <i class="fa-solid fa-server skill-icon"></i>
+      <h3>Distributed Systems</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-solid fa-network-wired skill-icon"></i>
-    <h3>Kafka</h3>
-  </div>
+    <div class="skill-card">
+      <i class="fa-solid fa-network-wired skill-icon"></i>
+      <h3>Kafka</h3>
+    </div>
 
-  <div class="skill-card">
-    <i class="fa-brands fa-linux skill-icon"></i>
-    <h3>Linux</h3>
-  </div>
-
+    <div class="skill-card">
+      <i class="fa-brands fa-linux skill-icon"></i>
+      <h3>Linux</h3>
+    </div>
+  </section>
 </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <h1 class="contact-header">Contact</h1>
+
+  <div class="contact-container">
+    <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input id="name" class="contact-input" type="text" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input id="email" class="contact-input" type="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" class="contact-textarea" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="contact-button">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer id="footer" class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">© 2026 Charles Gonzalez</div>
+    <div class="footer-right">
+      <a href="https://github.com/CharlieGonzo" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
